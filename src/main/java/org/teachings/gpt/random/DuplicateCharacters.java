@@ -18,17 +18,14 @@ public class DuplicateCharacters {
         }
     }
 
-    public char findFirst(String input) {
+    private char findFirst(String input) {
         if (input == null) {
             return 0;
         }
-
         HashMap<Character, Integer> charCounter = new HashMap<>();
-
         for (char c : input.toCharArray()) {
             charCounter.put(c, charCounter.getOrDefault(c, 0) + 1);
         }
-
         for (char c : input.toCharArray()) {
             if (charCounter.get(c) == 1) {
                 return c;

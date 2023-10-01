@@ -19,7 +19,7 @@ public class ReversedArray {
         System.out.println("Reversed array: " + Arrays.toString(input));
     }
 
-    public void reverse(int[] array) {
+    private void reverse(int[] array) {
         int left = 0;
         int right = array.length - 1;
 
@@ -27,7 +27,6 @@ public class ReversedArray {
             int temp = array[left];
             array[left] = array[right];
             array[right] = temp;
-
             left++;
             right--;
         }

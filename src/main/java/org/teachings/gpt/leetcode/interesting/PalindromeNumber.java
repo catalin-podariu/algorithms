@@ -1,4 +1,4 @@
-package org.teachings.gpt.random;
+package org.teachings.gpt.leetcode.interesting;
 
 public class PalindromeNumber {
 

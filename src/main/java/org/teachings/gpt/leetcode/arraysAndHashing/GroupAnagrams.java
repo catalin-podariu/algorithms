@@ -1,9 +1,19 @@
-package org.teachings.gpt.structured.arraysAndHashing;
+package org.teachings.gpt.leetcode.arraysAndHashing;
 
 import java.util.*;
 
 public class GroupAnagrams {
 
+    /*
+     * Given an array of strings strs, group the anagrams together.
+     * You can return the answer in any order.
+     *
+     * An Anagram is a word or phrase formed by rearranging the letters of a
+     * different word or phrase, typically using all the original letters exactly once.
+     *
+     * Input: strs = ["eat","tea","tan","ate","nat","bat"]
+     * Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
+     */
     public static void main(String[] args) {
         new GroupAnagrams().start();
     }
@@ -13,7 +23,7 @@ public class GroupAnagrams {
         System.out.println(groupAnagrams(input));
     }
 
-    public List<List<String>> groupAnagrams(String[] strs) {
+    private List<List<String>> groupAnagrams(String[] strs) {
         if (strs == null || strs.length == 0) {
             return null;
         }
@@ -31,5 +41,4 @@ public class GroupAnagrams {
         }
         return new ArrayList<>(result.values());
     }
-
 }
