@@ -14,6 +14,8 @@ It's a go-to place for developers looking to sharpen their problem-solving skill
 - TwoSum
 - ValidAnagram
 - Top k frequent elements
+- Valid (String) palindrome
+- Two Sum II - Input array is sorted
   </br>
   </br>
 
