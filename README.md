@@ -5,7 +5,7 @@ This repository showcases various algorithms and challenges written in Java. </b
 It's a go-to place for developers looking to sharpen their problem-solving skills and coding prowess.
 </br>
 
-<H3>LeetCode Problems</H3>
+<H3>LeetCode 75 list of challenges</H3>
 
 - ArraysAndHashing
 - ContainsDuplicate
