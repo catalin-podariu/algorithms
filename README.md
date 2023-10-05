@@ -12,6 +12,7 @@ It's a go-to place for developers looking to sharpen their problem-solving skill
 - GroupAnagrams
 - TwoSum
 - ValidAnagram
+- Top k frequent elements
   </br>
   </br>
 
@@ -20,6 +21,9 @@ It's a go-to place for developers looking to sharpen their problem-solving skill
 - MaximumSubarray
 - PalindromeNumber
 - RomanToInteger
+- Fast Fourier Transform
+- Remove element
+- Remove duplicate from sorted array
   </br>
   </br>
 
@@ -35,3 +39,4 @@ It's a go-to place for developers looking to sharpen their problem-solving skill
 - PrimeFactorization
 - ReversedArray
 - TortoiseAndHare
+- Majority element
