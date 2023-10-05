@@ -15,7 +15,6 @@ public class FrequencyDistribution {
                         frequencyDistribution(bigNumbersString)));
     }
 
-
     private int[] frequencyDistribution(String input) {
         int[] count = new int[10];
 

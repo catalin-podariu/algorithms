@@ -42,9 +42,10 @@ public class HorseRace {
             uniqueChampions.add(race.get(0));  // Get winners from each group
         }
 
-        System.out.println("\nRace of the champions");
+        System.out.println("\nChampions:");
         List<Horse> champions = new ArrayList<>(uniqueChampions);
         sortHorsesByTime(champions);
+        System.out.println("\nPlaces after the race of the champions");
         System.out.println(Arrays.toString(champions.toArray()));
 
         // Get top 3 champions
@@ -99,6 +100,7 @@ public class HorseRace {
 
     private List<List<Horse>> generateInitialRaceTimes() {
         List<List<Horse>> races = new ArrayList<>();
+        // you need 3 decimals for risk of 'collisions'
         DecimalFormat df = new DecimalFormat("####0.000");
 //        Random rand = new Random(31); // use fixed seed for debugging
 
@@ -125,7 +127,7 @@ record Horse(double time, String name) implements Comparable<Horse> {
 
     @Override
     public String toString() {
-        return String.format("[%s],\t\ttime [%s]", name, time);
+        return String.format("[%s],\t [%s] ||", name, time);
     }
 
     @Override
