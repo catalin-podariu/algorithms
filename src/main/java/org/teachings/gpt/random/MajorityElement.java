@@ -1,6 +1,5 @@
 package org.teachings.gpt.random;
 
-import java.util.Arrays;
 import java.util.HashMap;
 
 public class MajorityElement {
@@ -25,6 +24,10 @@ public class MajorityElement {
     }
 
     public int findMajorityElement(int[] nums) {
+        if (nums == null || nums.length == 0) {
+            return -1;
+        }
+
         HashMap<Integer, Integer> map = new HashMap<>();
         int n = nums.length;
 

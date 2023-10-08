@@ -1,12 +1,16 @@
 package org.teachings.gpt.leetcode.arraysAndHashing;
 
 import java.util.*;
-import java.util.stream.Collector;
 
 public class TopKFrequentElements {
 
     /*
+     * Given an integer array nums and an integer k, return the k most frequent elements.
+     * You may return the answer in any order.
      *
+     * Example:
+     * Input: nums = [1,1,1,2,2,3], k = 2
+     * Output: [1,2]
      */
     public static void main(String[] args) {
         new TopKFrequentElements().start();
