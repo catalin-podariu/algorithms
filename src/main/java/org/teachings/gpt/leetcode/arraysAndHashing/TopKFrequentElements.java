@@ -17,14 +17,14 @@ public class TopKFrequentElements {
     }
 
     private void start() {
-        int[] input = {1, 1, 1, 2, 2, 3};
+        int[] input = {1, 1, 1, 2, 2, 3, 4, 5};
         int k = 2;
-        System.out.println(Arrays.toString(topKFrequent(input, k)));
+        System.out.println(Arrays.toString(getTopKFrequent(input, k)));
     }
 
-    public int[] topKFrequent(int[] nums, int k) {
+    public int[] getTopKFrequent(int[] nums, int k) {
         // Count frequencies using a HashMap
-        HashMap<Integer, Integer> freqMap = new HashMap<>();
+        Map<Integer, Integer> freqMap = new HashMap<>();
         for (int num : nums) {
             freqMap.put(num, freqMap.getOrDefault(num, 0) + 1);
         }

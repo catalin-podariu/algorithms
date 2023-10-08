@@ -41,6 +41,27 @@ public class BigFibs {
         System.out.println("Filename is: " + filename);
     }
 
+    // Main function to compute nth Fibonacci number
+    private BigInteger fib(int n) {
+        if (n == 0) return BigInteger.ZERO;
+
+        BigInteger[][] baseMatrix = {{BigInteger.ONE, BigInteger.ONE},
+                {BigInteger.ONE, BigInteger.ZERO}};
+
+        BigInteger[][] resultMatrix = matrixPower(baseMatrix, n - 1);
+
+        return resultMatrix[0][0];
+    }
+
+    // Helper function to raise a 2x2 matrix to the power of n
+    private BigInteger[][] matrixPower(BigInteger[][] a, int n) {
+        if (n == 1) return a;
+        if (n % 2 != 0) return multiply(a, matrixPower(a, n - 1));
+
+        BigInteger[][] halfPower = matrixPower(a, n / 2);
+        return multiply(halfPower, halfPower);
+    }
+
     // Helper function to multiply two 2x2 matrices
     private BigInteger[][] multiply(BigInteger[][] a, BigInteger[][] b) {
         BigInteger[][] result = new BigInteger[2][2];
@@ -53,27 +74,6 @@ public class BigFibs {
             }
         }
         return result;
-    }
-
-    // Helper function to raise a 2x2 matrix to the power of n
-    private BigInteger[][] matrixPower(BigInteger[][] a, int n) {
-        if (n == 1) return a;
-        if (n % 2 != 0) return multiply(a, matrixPower(a, n - 1));
-
-        BigInteger[][] halfPower = matrixPower(a, n / 2);
-        return multiply(halfPower, halfPower);
-    }
-
-    // Main function to compute nth Fibonacci number
-    private BigInteger fib(int n) {
-        if (n == 0) return BigInteger.ZERO;
-
-        BigInteger[][] baseMatrix = {{BigInteger.ONE, BigInteger.ONE},
-                {BigInteger.ONE, BigInteger.ZERO}};
-
-        BigInteger[][] resultMatrix = matrixPower(baseMatrix, n - 1);
-
-        return resultMatrix[0][0];
     }
 
     private BigInteger dib(BigInteger n, Map<BigInteger, BigInteger> memo) {
