@@ -146,45 +146,45 @@ It's a go-to place for developers looking to sharpen their problem-solving skill
 **Examples:** Array index access, hash table lookups </br>
 **What it means:** No matter how large the input, the operation takes constant time.
 
-### **Logarithmic Time: O(log N)**
+### **Logarithmic Time: O(log n)**
 
 **Examples:** Binary search, finding the largest item in a binary search tree </br>
 **What it means:** The time taken increases logarithmically as the input size increases.
 
-### **Linear Time: O(N)**
+### **Linear Time: O(n)**
 
 **Examples:** Loops iterating through elements in a single collection (array, list, etc.) </br>
 **What it means:** Time complexity grows in direct proportion to the size of the input.
 
-### **Linear Logarithmic Time: O(N log N)**
+### **Linear Logarithmic Time: O(n log n)**
 
 **Examples:** Merge sort, quick sort, built-in sorting algorithms (often) </br>
 **What it means:** Slightly worse than linear but better than quadratic time. Common in algorithms that divide input
 data in each step.
 
-### **Quadratic Time: O(N^2)**
+### **Quadratic Time: O(n^2)**
 
 **Examples:** Nested loops, bubble sort, insertion sort, selection sort </br>
 **What it means:** Time complexity grows with the square of the size of the input data. Often undesirable.
 
-### **Cubic Time: O(N^3)**
+### **Cubic Time: O(n^3)**
 
 **Examples:** Triple nested loops </br>
 **What it means:** Even worse than quadratic time. You usually want to avoid cubic time complexity.
 
-### **Exponential Time: O(2^N)**
+### **Exponential Time: O(2^n)**
 
 **Examples:** Recursive calculations like the naive Fibonacci sequence </br>
 **What it means:** Extremely slow. As data grows, the number of operations grows exponentially.
 
-### **Factorial Time: O(N!)**
+### **Factorial Time: O(n!)**
 
 **Examples:** Permutation generation, the naive traveling salesman problem </br>
 **What it means:** The slowest of the bunch. Time complexity grows faster than exponential growth.
 
 Space Complexity: <br>
 Constant Space: O(1) <br>
-Linear Space: O(N)
+Linear Space: O(n)
 
   <br>
 
@@ -192,5 +192,5 @@ Linear Space: O(N)
 
 Always consider the worst-case scenario when evaluating Big-O unless otherwise specified.
 Ignore constant factors and lower order terms, focus on the dominating term.
-Look for nested loops (O(N^2), O(N^3), etc.), recursive calls, and how the algorithm divides its input data (O(log N),
-O(N log N)).
+Look for nested loops (O(n^2), O(n^3), etc.), recursive calls, and how the algorithm divides its input data (O(log n),
+O(n log n)).
