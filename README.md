@@ -6,6 +6,7 @@ It's a go-to place for developers looking to sharpen their problem-solving skill
 </br>
 
 <H3>LeetCode 75 list of challenges</H3>
+
 [A great roadmap can be found here.](https://neetcode.io/roadmap)
 
 - ArraysAndHashing
@@ -41,7 +42,7 @@ It's a go-to place for developers looking to sharpen their problem-solving skill
 - MajorityElement
 - PrimeFactorization
 - ReversedArray
-- TortoiseAndHare (Floyd’s cycle)
+- TortoiseAndHare _(Floyd’s cycle)_
   </br>
   </br>
 
