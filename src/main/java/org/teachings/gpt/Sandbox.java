@@ -1,9 +1,9 @@
 package org.teachings.gpt;
 
-public class MemoryTest {
+public class Sandbox {
 
     public static void main(String[] args) {
-        new MemoryTest().start();
+        new Sandbox().start();
     }
 
     private void start() {

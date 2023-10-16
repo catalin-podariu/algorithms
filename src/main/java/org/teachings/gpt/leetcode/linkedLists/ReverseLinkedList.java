@@ -2,6 +2,8 @@ package org.teachings.gpt.leetcode.linkedLists;
 
 import org.teachings.gpt.leetcode.linkedLists.common.Node;
 
+import static org.teachings.gpt.leetcode.linkedLists.common.ListUtils.createListOf;
+
 public class ReverseLinkedList {
 
     /*
@@ -13,9 +15,16 @@ public class ReverseLinkedList {
 
     private void start() {
         int[] values = new int[]{1, 2, 3, 4, 5, 6, 7};
-        Node head = createList(values, 0);
-        Node reversed1 = reverseList_Iteratively(head);
-        Node reversed2 = reverseList_Recursively(head);
+
+        Node first = createListOf(values, 0);
+        System.out.println(first);
+        Node firstReversed = reverseList_Iteratively(first);
+        System.out.println(firstReversed);
+
+        Node second = createListOf(values, 0);
+        System.out.println(second);
+        Node secondReversed = reverseList_Recursively(second);
+        System.out.println(secondReversed);
     }
 
     private Node reverseList_Iteratively(Node head) {
@@ -39,17 +48,5 @@ public class ReverseLinkedList {
         head.next.next = head;
         head.next = null;
         return newHead;
-    }
-
-    private Node createList(int[] values, int index) {
-        // Base case: If index is out of bounds of the array
-        if (values == null || index >= values.length) return null;
-
-        // Create a new node with the current array value
-        Node newNode = new Node(values[index]);
-
-        // Recursively create the rest of the list
-        newNode.next = createList(values, index + 1);
-        return newNode;
     }
 }

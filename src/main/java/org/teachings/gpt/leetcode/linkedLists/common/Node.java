@@ -14,4 +14,22 @@ public class Node {
         this.value = value;
         this.next = next;
     }
+
+    @Override
+    public String toString() {
+        StringBuilder builder = new StringBuilder();
+        buildString(builder, "");
+        return builder.toString();
+    }
+
+    private void buildString(StringBuilder builder, String prefix) {
+        builder.append(prefix)
+                .append("└── ")
+                .append(value)
+                .append("\n");
+
+        if (next != null) {
+            next.buildString(builder, prefix + ("\t"));
+        }
+    }
 }

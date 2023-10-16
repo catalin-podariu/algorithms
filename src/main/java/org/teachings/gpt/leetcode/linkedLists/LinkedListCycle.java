@@ -2,6 +2,8 @@ package org.teachings.gpt.leetcode.linkedLists;
 
 import org.teachings.gpt.leetcode.linkedLists.common.Node;
 
+import static org.teachings.gpt.leetcode.linkedLists.common.ListUtils.createListWithLoop;
+
 public class LinkedListCycle {
 
     private Node fastPointer;
@@ -26,16 +28,6 @@ public class LinkedListCycle {
         } else {
             System.out.println("No loop found");
         }
-    }
-
-    private Node createListWithLoop() {
-        Node head = new Node(1);
-        head.next = new Node(2);
-        head.next.next = new Node(3);
-        head.next.next.next = new Node(4);
-        head.next.next.next.next = new Node(5);
-        head.next.next.next.next.next = head.next.next; // creating the loop
-        return head;
     }
 
     private boolean doesListHaveLoop(Node head) {

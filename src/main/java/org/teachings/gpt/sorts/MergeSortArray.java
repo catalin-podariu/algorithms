@@ -2,10 +2,10 @@ package org.teachings.gpt.sorts;
 
 import java.util.Arrays;
 
-public class MergeSort {
+public class MergeSortArray {
 
     public static void main(String[] args) {
-        new MergeSort().start();
+        new MergeSortArray().start();
     }
 
     private void start() {
