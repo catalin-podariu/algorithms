@@ -9,7 +9,8 @@ It's a go-to place for developers looking to sharpen their problem-solving skill
 
 [A great roadmap can be found here.](https://neetcode.io/roadmap)
 
-- ArraysAndHashing
+<H3>Arrays and Hashing</H3>
+
 - ContainsDuplicate
 - GroupAnagrams
 - TwoSum
@@ -17,6 +18,12 @@ It's a go-to place for developers looking to sharpen their problem-solving skill
 - Top k frequent elements
 - Valid (String) palindrome
 - Two Sum II - Input array is sorted
+  </br>
+  </br>
+
+<H3>Linked Lists</H3>
+- LinkedListCycle
+- ReverseLinkedList
   </br>
   </br>
 
@@ -33,9 +40,9 @@ It's a go-to place for developers looking to sharpen their problem-solving skill
 
 <H3>Random Problems</H3>
 
-- BigFibs _(This doesn't fail)_
+- BigFibs _(this doesn't fail)_
 - DuplicateCharacters
-- Fibs _(This fails starting with the 93rd number)_
+- Fibs _(this fails starting with the 93rd number)_
 - FrequencyDistribution
 - HorseRace
 - KidsWithCandy

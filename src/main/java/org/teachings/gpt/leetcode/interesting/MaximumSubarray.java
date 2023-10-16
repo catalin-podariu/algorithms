@@ -30,7 +30,7 @@ public class MaximumSubarray {
             temp += num;
             cMax = Math.max(cMax, temp);
             if (temp < 0) {
-                temp = 0;
+                temp = 0; // reset temp if it falls below zero
             }
         }
         return cMax;

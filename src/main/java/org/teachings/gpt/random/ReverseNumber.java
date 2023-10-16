@@ -2,18 +2,18 @@ package org.teachings.gpt.random;
 
 import java.util.Arrays;
 
-public class ReversedArray {
+public class ReverseNumber {
 
     public static void main(String[] args) {
-        new ReversedArray().start();
+        new ReverseNumber().start();
     }
 
     private void start() {
         int[] input = {1, 2, 3, 4, 5, 6, 7, 8, 9};
-        reverseArray(input);
+        reverseNumber(input);
 //        reverseNumber();
     }
-    private void reverseArray(int[] input) {
+    private void reverseNumber(int[] input) {
         System.out.println("Initial state:  " + Arrays.toString(input));
         reverse(input);
         System.out.println("Reversed array: " + Arrays.toString(input));

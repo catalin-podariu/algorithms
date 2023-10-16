@@ -4,19 +4,31 @@ import java.util.Arrays;
 
 public class BinarySearch {
 
+    /*
+     * Given an array of integers nums which is sorted in ascending order, and an integer target,
+     * write a function to search target in nums. If target exists, then return its index.
+     * Otherwise, return -1.
+     *
+     * You must write an algorithm with O(log n) runtime complexity.
+     *
+     * Example
+     * Input: nums = [-1,0,3,5,9,12], target = 9
+     * Output: 4
+     */
+
     public static void main(String[] args) {
         new BinarySearch().start();
     }
 
     private void start() {
-        int[] array = {1, 6, 3, 5, 7, 2, 4, 9};
-        int target = 5;
+        int[] array = {-1, 0, 3, 5, 9, 12};
+        int target = 9;
         Arrays.sort(array); // doesn't work as expected if array is not sorted
-        int result = binarySearch(array, target);
-        System.out.println("The target " + target + " is at index: " + result);  // Output should be 4
+        int result = search(array, target);
+        System.out.printf("The target [%s] is at index [%s]\n", target, result);  // Output should be 4
     }
 
-    public int binarySearch(int[] array, int target) {
+    public int search(int[] array, int target) {
         int start = 0;
         int end = array.length - 1;
 
