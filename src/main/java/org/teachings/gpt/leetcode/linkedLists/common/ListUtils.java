@@ -30,6 +30,38 @@ public class ListUtils {
         return newNode;
     }
 
+    public static Node mergeSort(Node head) {
+        if (head == null || head.next == null) return head;
+
+        Node middle = getMiddle(head);
+        Node nextOfMiddle = middle.next;
+
+        // Disconnect the two halves
+        middle.next = null;
+
+        // Step 2: Recursively sort both halves
+        Node left = mergeSort(head);
+        Node right = mergeSort(nextOfMiddle);
+
+        // Step 3: Merge the sorted halves
+        return merge(left, right);
+    }
+
+    public static Node getMiddle(Node head) {
+        if (head == null) return null;
+
+        Node slow = head;
+        Node fast = head;
+
+        // Divide the list into two halves using slow/fast pointer technique
+        while (fast.next != null
+                && fast.next.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        return slow;
+    }
+
     public static Node merge(Node headOfList1, Node headOfList2) {
         Node dummy = new Node(0);
         Node current = dummy;
@@ -52,5 +84,21 @@ public class ListUtils {
         if (headOfList2 != null) current.next = headOfList2;
 
         return dummy.next;
+    }
+
+    public static boolean hasLoop(Node head) {
+        Node slow = head;
+        Node fast = head;
+        boolean hasLoop = false;
+
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+            if (slow == fast) {
+                hasLoop = true;
+                break;
+            }
+        }
+        return hasLoop;
     }
 }

@@ -27,6 +27,12 @@ It's a go-to place for developers looking to sharpen their problem-solving skill
 - MergeTwoSortedLists
 - Commons:
   - ListUtils
+    - createListWithLoop
+    - createListOf
+    - mergeSort
+    - getMiddle
+    - merge
+    - hasLoop
   - Node _(with visual toString)_
     </br>
     </br>
@@ -61,7 +67,7 @@ It's a go-to place for developers looking to sharpen their problem-solving skill
 
 - BinarySearch
 - DualPivotQuickSort
-- MergeSort
+- MergeSortArray
 - QuickSort
   </br>
   </br>
