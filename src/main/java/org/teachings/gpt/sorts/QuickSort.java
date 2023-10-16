@@ -1,5 +1,9 @@
 package org.teachings.gpt.sorts;
 
+import java.util.Arrays;
+
+import static org.teachings.gpt.sorts.common.SortUtils.swap;
+
 public class QuickSort {
 
     /*
@@ -18,11 +22,12 @@ public class QuickSort {
     }
 
     private void start() {
-        System.out.println("Delete this before writing some code.");
-        // TODO cpodariu - initiate and learn this.
+        int[] input = {30, 20, 10, 6, 5, 4};
+        quickSort(input, 0, input.length - 1);
+        System.out.println(Arrays.toString(input));
     }
 
-    public void quickSort(int[] arr, int low, int high) {
+    private void quickSort(int[] arr, int low, int high) {
         if (low < high) {
             int pivotIndex = partition(arr, low, high);
             quickSort(arr, low, pivotIndex - 1);
@@ -30,20 +35,17 @@ public class QuickSort {
         }
     }
 
-    public int partition(int[] arr, int low, int high) {
-        int pivot = arr[high];
+    private int partition(int[] input, int low, int high) {
         int i = low;
+        int pivot = input[high];
+
         for (int j = low; j < high; j++) {
-            if (arr[j] < pivot) {
-                int temp = arr[i];
-                arr[i] = arr[j];
-                arr[j] = temp;
+            if (input[j] < pivot) {
+                swap(input, i, j);
                 i++;
             }
         }
-        int temp = arr[i];
-        arr[i] = arr[high];
-        arr[high] = temp;
+        swap(input, i, high);
         return i;
     }
 }

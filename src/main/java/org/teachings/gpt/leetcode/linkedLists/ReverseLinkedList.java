@@ -46,7 +46,7 @@ public class ReverseLinkedList {
         if (head == null || head.next == null) return head;
         Node newHead = reverseList_Recursively(head.next);
         head.next.next = head;
-        head.next = null;
+        head.next = null; // breaking loops, on the way back
         return newHead;
     }
 }

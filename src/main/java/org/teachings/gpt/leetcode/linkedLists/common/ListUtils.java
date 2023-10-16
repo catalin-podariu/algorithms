@@ -70,10 +70,10 @@ public class ListUtils {
         while (headOfList1 != null && headOfList2 != null) {
             if (headOfList1.value < headOfList2.value) {
                 current.next = headOfList1;
-                headOfList1 = headOfList1.next;
+                headOfList1 = headOfList1.next; // basically i++
             } else {
                 current.next = headOfList2;
-                headOfList2 = headOfList2.next;
+                headOfList2 = headOfList2.next; // basically i++
             }
             // Move the current pointer to the latest added node
             current = current.next;

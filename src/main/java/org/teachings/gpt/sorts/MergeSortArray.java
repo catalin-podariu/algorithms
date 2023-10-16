@@ -11,19 +11,9 @@ public class MergeSortArray {
     private void start() {
         int[] input = {30, 20, 10, 6, 5, 4};
         int arrayOneLength = input.length;
-
-        System.out.println("Unsorted array:");
-        for (int item : input) {
-            System.out.print(item + " ");
-        }
-        System.out.println();
-
+        System.out.println(Arrays.toString(input));
         mergeSort(input, 0, arrayOneLength - 1);
-
-        System.out.println("Sorted array:");
-        for (int item : input) {
-            System.out.print(item + " ");
-        }
+        System.out.println(Arrays.toString(input));
     }
 
     private void mergeSort(int[] input, int leftIndex, int rightIndex) {
@@ -46,20 +36,12 @@ public class MergeSortArray {
         int[] right = new int[rightSize];
 
         // Copy data to temporary arrays
-        // System.arraycopy(input, leftIndex, left, 0, leftSize);
-        for (int i = 0; i < leftSize; i++) {
+        for (int i = 0; i < leftSize; i++) { // System.arraycopy(input, leftIndex, left, 0, leftSize);
             left[i] = input[leftIndex + i];
         }
-        System.out.println("After first copy");
-        System.out.println(
-                "Left " + Arrays.toString(left) + " | " + "Right " + Arrays.toString(right) + " | " + "Input " + Arrays.toString(input));
-
         for (int j = 0; j < rightSize; j++) {
             right[j] = input[middleIndex + 1 + j];
         }
-        System.out.println("After second copy");
-        System.out.println(
-                "Left " + Arrays.toString(left) + " | " + "Right " + Arrays.toString(right) + " | " + "Input " + Arrays.toString(input));
 
         // Merge the temporary arrays back into the original input
         int i = 0, j = 0, k = leftIndex;
@@ -74,9 +56,6 @@ public class MergeSortArray {
             }
             k++;
         }
-        System.out.println("After merge temps");
-        System.out.println(
-                "Left " + Arrays.toString(left) + " | " + "Right " + Arrays.toString(right) + " | " + "Input " + Arrays.toString(input));
 
         // Copy any remaining elements of left
         while (i < leftSize) {
@@ -84,19 +63,11 @@ public class MergeSortArray {
             i++;
             k++;
         }
-        System.out.println("After left third copy");
-        System.out.println(
-                "Left " + Arrays.toString(left) + " | " + "Right " + Arrays.toString(right) + " | " + "Input " + Arrays.toString(input));
-
         // Copy any remaining elements of right
         while (j < rightSize) {
             input[k] = right[j];
             j++;
             k++;
         }
-        System.out.println("After right third copy");
-        System.out.println(
-                "Left " + Arrays.toString(left) + " | " + "Right " + Arrays.toString(right) + " | " + "Input " + Arrays.toString(input));
-        System.out.println("          ====   END   ==== ");
     }
 }

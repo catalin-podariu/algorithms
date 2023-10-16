@@ -1,5 +1,7 @@
 package org.teachings.gpt.sorts;
 
+import static org.teachings.gpt.sorts.common.SortUtils.swap;
+
 public class DualPivotQuickSort {
 
     /*
@@ -61,11 +63,4 @@ public class DualPivotQuickSort {
         dualPivotQuickSort(arr, lessThanPivot1Index, greaterThanPivot2Index);
         dualPivotQuickSort(arr, greaterThanPivot2Index + 2, highIndex);
     }
-
-    private void swap(int[] array, int first, int second) {
-        int temp = array[first];
-        array[first] = array[second];
-        array[second] = temp;
-    }
-
 }
