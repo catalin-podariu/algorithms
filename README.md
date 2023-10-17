@@ -8,9 +8,11 @@ It can also be a go-to place for other developers looking to sharpen their probl
 skills and coding know-how.
 </br>
 
-<H3>[LeetCode 75](https://leetcode.com/studyplan/leetcode-75) </H3>
+<H3>LeetCode 75</H3> 
 
-[A great roadmap can be found here](https://neetcode.io/roadmap)
+[link here](https://leetcode.com/studyplan/leetcode-75)
+
+[A great roadmap for this can be found here](https://neetcode.io/roadmap)
 
 <H3>Arrays and Hashing</H3>
 
