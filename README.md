@@ -1,15 +1,16 @@
 <H1> Java Algorithms and Challenges </H1>
 
-Welcome to the Java Algorithms and Challenges repository! </br>
-This repository showcases various algorithms and challenges written in Java. </br>
-It's a go-to place for developers looking to sharpen their problem-solving skills and coding prowess.
-</br>
-
-<H3>[LeetCode 75](https://leetcode.com/studyplan/leetcode-75)</H3>
-
+Welcome to my version of the LeetCode 75 Algorithms and Challenges.</br>
 _(still work in progress..)_
 
-[A great roadmap can be found here.](https://neetcode.io/roadmap)
+This repository showcases various algorithms and challenges written in Java. </br>
+It can also be a go-to place for other developers looking to sharpen their problem-solving 
+skills and coding know-how.
+</br>
+
+<H3>[LeetCode 75](https://leetcode.com/studyplan/leetcode-75) </H3>
+
+[A great roadmap can be found here](https://neetcode.io/roadmap)
 
 <H3>Arrays and Hashing</H3>
 
