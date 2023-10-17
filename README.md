@@ -1,8 +1,12 @@
+
 <H1> Java Algorithms and Challenges </H1>
 
-Welcome to my version of the LeetCode 75 Algorithms and Challenges.</br>
+Welcome to my version of the [LeetCode 75](https://leetcode.com/studyplan/leetcode-75) algorithms list.</br>
 _(still work in progress..)_
 
+There are other algorithms that I found interesting, in other places than the LeetCode. 
+Those are in a different package.
+</br>
 This repository showcases various algorithms and challenges written in Java. </br>
 It can also be a go-to place for other developers looking to sharpen their problem-solving 
 skills and coding know-how.
@@ -10,27 +14,25 @@ skills and coding know-how.
 
 <H3>LeetCode 75</H3> 
 
-[link here](https://leetcode.com/studyplan/leetcode-75)
-
 [A great roadmap for this can be found here](https://neetcode.io/roadmap)
 
 <H3>Arrays and Hashing</H3>
 
-- ContainsDuplicate
-- GroupAnagrams
-- TwoSum
-- ValidAnagram
+- Contains duplicate
+- Group anagrams
+- Two sum
+- Valid anagram
 - Top k frequent elements
 - Valid (String) palindrome
-- Two Sum II - Input array is sorted
+- Two Sum II _(input array is sorted)_
   </br>
   </br>
 
 <H3>Linked Lists</H3>
 
-- LinkedListCycle
-- ReverseLinkedList
-- MergeTwoSortedLists
+- Linked List Cycle
+- Reverse Linked List
+- Merge Two Sorted Lists
 - Commons:
   - ListUtils
     - createListWithLoop
@@ -45,10 +47,10 @@ skills and coding know-how.
 
 <H3>Interesting</H3>
 
-- MaximumSubarray
-- PalindromeNumber
-- RomanToInteger
-- Fast Fourier Transform
+- Maximum subarray
+- Palindrome number
+- Roman to integer
+- Fast fourier transform
 - Remove element
 - Remove duplicate from sorted array
   </br>
@@ -56,25 +58,25 @@ skills and coding know-how.
 
 <H3>Random Problems</H3>
 
-- BigFibs _(this doesn't fail)_
-- DuplicateCharacters
+- Big Fibs _(this doesn't fail)_
+- Duplicate characters
 - Fibs _(this fails starting with the 93rd number)_
-- FrequencyDistribution
-- HorseRace
-- KidsWithCandy
-- MajorityElement
-- PrimeFactorization
-- ReversedArray
-- TortoiseAndHare _(Floyd’s cycle)_
+- Frequency distribution
+- Horse race
+- Kids with candy
+- Majority element
+- Prime factorization
+- Reversed array
+- LinkedList cycle
   </br>
   </br>
 
 <H3>Sort & Search</H3>
 
-- BinarySearch
-- DualPivotQuickSort
-- MergeSortArray
-- QuickSort
+- Binary search
+- Dual-pivot quick sort
+- Merge sort array
+- Quick sort
   </br>
   </br>
 
