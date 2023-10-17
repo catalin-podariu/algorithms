@@ -28,9 +28,10 @@ skills and coding know-how.
 
 <H3>Linked Lists</H3>
 
-- ✅ Linked List Cycle
+- ✅ Linked list cycle
 - ✅ Reverse Linked List
-- ✅ Merge Two Sorted Lists
+- ✅ Merge two sorted lists
+- ✅ Add two numbers
 - Commons:
   - ListUtils
     - createListWithLoop
@@ -69,6 +70,9 @@ skills and coding know-how.
 - ⏳ Dual-pivot quick sort
 - ✅ Merge sort array
 - ✅ Quick sort
+
+
+_(each of these has, in the code, the context, examples and expected output)_
 
 ---
 
