@@ -134,58 +134,34 @@ skills and coding know-how.
 
 ---
 
-<H1>The Big-O cheat sheet</H1>
+<H1>Tips and tricks</H1>
 
-### **Constant Time: O(1)**
+Here's a plan you can follow to give you the best shot at climbing over that obstacle, even if it's a new and unfamiliar challenge.
+</br>
+Catching the quirks and nuances in a coding challenge right off the bat can often be the difference between a smooth implementation and getting bogged down. </br>
 
-**Examples:** Array index access, hash table lookups </br>
-**What it means:** No matter how large the input, the operation takes constant time.
+1. **Assume Nothing, Question Everything** </br>
+   Even if the problem seems familiar, read every single word of the problem statement twice, as if you're a detective looking for clues. Quirks often lurk in the specifics.
+2. **Look for "Loaded" Words** </br>
+   Words like "sorted," "distinct," "unique," or "uniformly" often signal a quirk or a key detail about the data set you'll be working with.
+3. **Check Constraints** </br>
+   Extremely large or small input sizes can be a clue about the expected time complexity. A large upper limit may mean that your solution needs to be highly optimized.
+4. **Examples Aren't Just Examples** </br>
+   Test cases often hold hidden clues. Look at the edge cases in the example: are there any patterns or inconsistencies that could indicate a quirk?
+5. **Read Between the Lines** </br>
+   Sometimes, what's not said is as important as what's said. For example, if the prompt is vague about what to return for multiple correct answers, that’s something to note and clarify.
+6. **Question the 'Given'** </br>
+   If you're given certain information, there's usually a reason for it. Ask yourself why you have that piece of information and how it could be useful.
+7. **Engage the Senses** </br>
+   Visualize the problem or even draw it out. Sometimes seeing the problem visually can highlight patterns or quirks that aren't obvious when read.
+8. **Check for Trick Questions** </br>
+   Sometimes a problem seems harder than it actually is, or the naive solution is actually the correct one. Don't overcomplicate things.
+9. **Human Check** </br>
+   Think about the problem from a real-world perspective or how you would solve it manually without code. Sometimes real-world logic can shed light on programmatic quirks.
+10. **Boomerang Technique** </br>
+    Skim the problem, then walk away for a few minutes and let it simmer in your subconscious. Sometimes insights come when you’re not directly focusing on the problem.
+11. **Trust Your Gut** </br>
+    If something feels off or too easy, it probably is. Your instincts have been honed by your experience, so don't ignore them.
+    
 
-### **Logarithmic Time: O(log n)**
-
-**Examples:** Binary search, finding the largest item in a binary search tree </br>
-**What it means:** The time taken increases logarithmically as the input size increases.
-
-### **Linear Time: O(n)**
-
-**Examples:** Loops iterating through elements in a single collection (array, list, etc.) </br>
-**What it means:** Time complexity grows in direct proportion to the size of the input.
-
-### **Linear Logarithmic Time: O(n log n)**
-
-**Examples:** Merge sort, quick sort, built-in sorting algorithms (often) </br>
-**What it means:** Slightly worse than linear but better than quadratic time. Common in algorithms that divide input
-data in each step.
-
-### **Quadratic Time: O(n^2)**
-
-**Examples:** Nested loops, bubble sort, insertion sort, selection sort </br>
-**What it means:** Time complexity grows with the square of the size of the input data. Often undesirable.
-
-### **Cubic Time: O(n^3)**
-
-**Examples:** Triple nested loops </br>
-**What it means:** Even worse than quadratic time. You usually want to avoid cubic time complexity.
-
-### **Exponential Time: O(2^n)**
-
-**Examples:** Recursive calculations like the naive Fibonacci sequence </br>
-**What it means:** Extremely slow. As data grows, the number of operations grows exponentially.
-
-### **Factorial Time: O(n!)**
-
-**Examples:** Permutation generation, the naive traveling salesman problem </br>
-**What it means:** The slowest of the bunch. Time complexity grows faster than exponential growth.
-
-Space Complexity: <br>
-Constant Space: O(1) <br>
-Linear Space: O(n)
-
-  <br>
-
-<H3>🛠 Tips and Tricks 🛠 </H3>
-
-Always consider the worst-case scenario when evaluating Big-O unless otherwise specified.
-Ignore constant factors and lower order terms, focus on the dominating term.
-Look for nested loops (O(n^2), O(n^3), etc.), recursive calls, and how the algorithm divides its input data (O(log n),
-O(n log n)).
+Having a robust mental toolkit like this can help you detect quirks and hidden details much more rapidly, allowing you to strategize more effectively.
