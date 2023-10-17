@@ -1,5 +1,5 @@
 1. Arrays and Hashing
-    Extended Keyword Indicators:
+    Keywords:
     [o] - Duplicate: find, remove, count
     [o] - Frequency: occurrences, highest, lowest
     [o] - Contiguous: subarray, subsequence
@@ -8,124 +8,124 @@
     [o] - Sum: two-sum, three-sum, target
     [o] - K elements: top-k, bottom-k
 
-    Extended Problem Examples:
-    [o] - Find the first non-repeated character in an array
+    Problems:
+    [x] - Find the first non-repeated character in an array
     [o] - Count all unique pairs with a specific difference
-    [o] - Find the longest contiguous increasing subarray
+    [x] - Find the longest contiguous increasing subarray
     [o] - Implement an LRU (Least Recently Used) cache
 
 2. Linked Lists
-    Extended Keyword Indicators:
-    [o] - Cycle: detect, find starting node
+    Keywords:
+    [x] - Cycle: detect, find starting node
     [o] - Reverse: entire list, in pairs, in k-groups
     [o] - Merge: two lists, k sorted lists
     [o] - Middle: find, remove
     [o] - Nth node: from end, from start
 
-    Extended Problem Examples:
+    Problems:
     [o] - Implement a doubly-linked list
     [o] - Merge k sorted linked lists into one sorted list
     [o] - Implement a linked list that can do insertions, deletions, and lookups in constant time
 
 3. Trees
-    Extended Keyword Indicators:
+    Keywords:
     [o] - Root: find, change
     [o] - Leaf: count, find
     [o] - Height/Depth: maximum, minimum
     [o] - Balanced: check, balance a tree
     [o] - Traversal: in-order, pre-order, post-order, level-order
 
-    Extended Problem Examples:
+    Problems:
     [o] - Serialize and deserialize a binary tree
     [o] - Convert a binary search tree to a doubly linked list
     [o] - Find the lowest common ancestor of two nodes
     [o] - Implement a red-black tree
 
 4. Sliding Window
-    Extended Keyword Indicators:
+    Keywords:
     [o] - Contiguous: sum, elements
     [o] - Maximum/Minimum: sum, product, length
     [o] - Subarray: fixed-size, variable-size
     [o] - K-elements: sum, average, median
 
-    Extended Problem Examples:
+    Problems:
     [o] - Find all anagrams in a string
     [o] - Longest substring with at most k distinct characters
     [o] - Maximum product subarray
     [o] - Smallest subarray with a sum greater than a given value
 
 5. Binary Search
-    Extended Keyword Indicators:
+    Keywords:
     [o] - Sorted: array, list, matrix
     [o] - Find: exact match, closest, first occurrence, last occurrence
     [o] - Rotated: array, list
     [o] - Missing: element, number
 
-    Extended Problem Examples:
+    Problems:
     [o] - Search for an element in a rotated sorted array
     [o] - Find the square root of a number to a certain decimal precision
     [o] - Implement exponential search
     [o] - Search a 2D matrix
 
 6. Tries
-    Extended Keyword Indicators:
+    Keywords:
     [o] - Prefix: longest, common, sum
     [o] - Dictionary: implement, search, insert
     [o] - Lexicon: lookup, validate
     [o] - Auto-complete: suggestions, history
 
-    Extended Problem Examples:
+    Problems:
     [o] - Implement a spell checker
     [o] - Search for words that can be formed by characters of other words
     [o] - Build a phone directory with fast lookup
 
 7. Heaps
-    Extended Keyword Indicators:
+    Keywords:
     [o] - Kth: smallest, largest
     [o] - Priority: queue, max-heap, min-heap
     [o] - Median: find, maintain
     [o] - Frequency: most frequent, least frequent
 
-    Extended Problem Examples:
+    Problems:
     [o] - Implement a priority queue
     [o] - Running median of a sequence of numbers
     [o] - Heapify an unsorted array
     [o] - Implement heap sort
 
 8. Divide and Conquer
-    Extended Keyword Indicators:
+    Keywords:
     [o] - Partition: quick sort, kth element
     [o] - Merge: merge sort, k sorted arrays
     [o] - Recursion: recursive, nested calls
     [o] - Multi-way: split, divide
 
-    Extended Problem Examples:
+    Problems:
     [o] - Implement Strassen’s algorithm for matrix multiplication
     [o] - Implement the Karatsuba algorithm for fast multiplication
     [o] - Find the closest pair of points in a plane
     [o] - Implement binary exponentiation
 
 9. Dynamic Programming
-    Extended Keyword Indicators:
+    Keywords:
     [o] - Optimal: solution, path, subset
     [o] - Sub-problems: overlapping, distinct
     [o] - Memoization: top-down, cache
     [o] - Bottom-up: iterative, tabulation
 
-    Extended Problem Examples:
+    Problems:
     [o] - Longest common subsequence
     [o] - Edit distance between two strings
     [o] - Coin change problem (minimum number of coins)
     [o] - Rod cutting problem
 
 10. Graph Algorithms
-    Extended Keyword Indicators:
+    Keywords:
     [o] - Shortest path: Dijkstra, Bellman-Ford, Floyd-Warshall
     [o] - Connected: components, graphs, nodes
     [o] - Cycle: detect, find
     [o] - Topological: sort, ordering
 
-    Extended Problem Examples:
+    Problems:
     [o] - Implement graph traversal algorithms (DFS, BFS)
     [o] - Find the articulation points in an undirected graph
     [o] - Max flow, min cut problem
