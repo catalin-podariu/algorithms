@@ -18,19 +18,19 @@ skills and coding know-how.
 
 <H3>Arrays and Hashing</H3>
 
-- Contains duplicate
-- Group anagrams
-- Two sum
-- Valid anagram
-- Top k frequent elements
-- Valid (String) palindrome
-- Two Sum II _(input array is sorted)_
+- ✅ Contains duplicate
+- ✅ Group anagrams
+- ✅ Two sum
+- ✅ Valid anagram
+- ✅ Top k frequent elements
+- ✅ Valid (String) palindrome
+- ✅ Two Sum II _(input array is sorted)_
 
 <H3>Linked Lists</H3>
 
-- Linked List Cycle
-- Reverse Linked List
-- Merge Two Sorted Lists
+- ✅ Linked List Cycle
+- ✅ Reverse Linked List
+- ✅ Merge Two Sorted Lists
 - Commons:
   - ListUtils
     - createListWithLoop
@@ -43,32 +43,32 @@ skills and coding know-how.
 
 <H3>Interesting</H3>
 
-- Maximum subarray
-- Palindrome number
-- Roman to integer
-- Fast fourier transform
-- Remove element
-- Remove duplicate from sorted array
+- ✅ Maximum subarray
+- ✅ Palindrome number
+- ✅ Roman to integer
+- ⏳Fast fourier transform
+- ✅ Remove element
+- ✅ Remove duplicate from sorted array
 
 <H3>Random Problems</H3>
 
 - Big Fibs _(this doesn't fail)_
-- Duplicate characters
-- Fibs _(this fails starting with the 93rd number)_
-- Frequency distribution
-- Horse race
-- Kids with candy
-- Majority element
-- Prime factorization
-- Reversed array
-- LinkedList cycle
+- ✅ Duplicate characters
+- ✅ Fibs _(this fails starting with the 93rd number)_
+- ✅ Frequency distribution
+- ✅ Horse race
+- ⏳ Kids with candy
+- ✅ Majority element
+- ✅ Prime factorization
+- ✅ Reversed array
+- ✅ LinkedList cycle
 
 <H3>Sort & Search</H3>
 
-- Binary search
-- Dual-pivot quick sort
-- Merge sort array
-- Quick sort
+- ⏳ Binary search
+- ⏳ Dual-pivot quick sort
+- ✅ Merge sort array
+- ✅ Quick sort
 
 ---
 
