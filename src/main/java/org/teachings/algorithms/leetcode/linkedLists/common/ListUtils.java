@@ -18,15 +18,15 @@ public class ListUtils {
         return head;
     }
 
-    public static Node createListOf(int[] values, int index) {
+    public static Node createListOf(int[] values, int startingPoint) {
         // base case
-        if (values == null || index >= values.length) return null;
+        if (values == null || startingPoint >= values.length) return null;
 
         // Create a new node with the current array value
-        Node newNode = new Node(values[index]);
+        Node newNode = new Node(values[startingPoint]);
 
         // Recursively create the rest of the list
-        newNode.next = createListOf(values, index + 1);
+        newNode.next = createListOf(values, startingPoint + 1);
         return newNode;
     }
 
