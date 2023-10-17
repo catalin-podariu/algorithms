@@ -5,7 +5,9 @@ This repository showcases various algorithms and challenges written in Java. </b
 It's a go-to place for developers looking to sharpen their problem-solving skills and coding prowess.
 </br>
 
-<H3>LeetCode 75 list of challenges</H3>
+<H3>[LeetCode 75](https://leetcode.com/studyplan/leetcode-75)</H3>
+
+_(still work in progress..)_
 
 [A great roadmap can be found here.](https://neetcode.io/roadmap)
 
@@ -22,6 +24,7 @@ It's a go-to place for developers looking to sharpen their problem-solving skill
   </br>
 
 <H3>Linked Lists</H3>
+
 - LinkedListCycle
 - ReverseLinkedList
 - MergeTwoSortedLists
