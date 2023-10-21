@@ -27,16 +27,14 @@ public class MergeSortArray {
     }
 
     private void merge(int[] input, int leftIndex, int middleIndex, int rightIndex) {
-        // Calculate sizes of sub-arrays to be merged
         int leftSize = middleIndex - leftIndex + 1;
         int rightSize = rightIndex - middleIndex;
 
-        // Create temporary arrays for left and right sub-arrays
+        // Create temporary arrays
         int[] left = new int[leftSize];
         int[] right = new int[rightSize];
 
-        // Copy data to temporary arrays
-        for (int i = 0; i < leftSize; i++) { // System.arraycopy(input, leftIndex, left, 0, leftSize);
+        for (int i = 0; i < leftSize; i++) {
             left[i] = input[leftIndex + i];
         }
         for (int j = 0; j < rightSize; j++) {
@@ -57,13 +55,11 @@ public class MergeSortArray {
             k++;
         }
 
-        // Copy any remaining elements of left
         while (i < leftSize) {
             input[k] = left[i];
             i++;
             k++;
         }
-        // Copy any remaining elements of right
         while (j < rightSize) {
             input[k] = right[j];
             j++;

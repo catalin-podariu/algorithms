@@ -66,7 +66,7 @@ skills and coding know-how.
 
 <H3>Sort & Search</H3>
 
-- ⏳ Binary search
+- ✅ Binary search
 - ⏳ Dual-pivot quick sort
 - ✅ Merge sort array
 - ✅ Quick sort

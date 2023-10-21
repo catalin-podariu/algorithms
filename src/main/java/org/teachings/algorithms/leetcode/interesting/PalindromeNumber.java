@@ -20,6 +20,6 @@ public class PalindromeNumber {
             reversed = reversed * 10 + x % 10;
             x /= 10;
         }
-        return (x == reversed || x == reversed / 10);
+        return (x == reversed || x == reversed / 10); // even vs odd number of digits
     }
 }

@@ -33,7 +33,7 @@ public class BinarySearch {
         int end = array.length - 1;
 
         while (start <= end) {
-            int mid = start + (end - start) / 2;
+            int mid = start + (end - start) / 2; // preventing potential overflow
 
             if (array[mid] == target) {
                 return mid;

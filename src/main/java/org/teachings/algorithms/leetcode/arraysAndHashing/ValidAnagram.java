@@ -34,20 +34,17 @@ public class ValidAnagram {
             return false;
         }
 
-        HashMap<Character, Integer> sCount = new HashMap<>();
-        HashMap<Character, Integer> tCount = new HashMap<>();
+        HashMap<Character, Integer> sFreq = new HashMap<>();
+        HashMap<Character, Integer> tFreq = new HashMap<>();
 
         for (char c : s.toCharArray()) {
-            sCount.put(c, sCount.getOrDefault(c, 0) + 1);
+            sFreq.put(c, sFreq.getOrDefault(c, 0) + 1);
         }
         for (char c : t.toCharArray()) {
-            tCount.put(c, tCount.getOrDefault(c, 0) + 1);
+            tFreq.put(c, tFreq.getOrDefault(c, 0) + 1);
         }
 
-        System.out.println(Arrays.toString(sCount.keySet().toArray(new Character[0])));
-        System.out.println(Arrays.toString(tCount.keySet().toArray(new Character[0])));
-
-        return sCount.equals(tCount);
+        return sFreq.equals(tFreq);
     }
 
     private boolean isAnagram_SimpleArrays(String s, String t) {
@@ -55,18 +52,15 @@ public class ValidAnagram {
             return false;
         }
 
-        int[] sCount = new int[256];
-        int[] tCount = new int[256];
+        int[] sFreq = new int[256];
+        int[] tFreq = new int[256];
 
         for (char c : s.toCharArray()) {
-            sCount[c]++;
+            sFreq[c]++;
         }
         for (char c : t.toCharArray()) {
-            tCount[c]++;
+            tFreq[c]++;
         }
-
-        System.out.println(Arrays.toString(sCount));
-        System.out.println(Arrays.toString(tCount));
-        return Arrays.equals(sCount, tCount);
+        return Arrays.equals(sFreq, tFreq);
     }
 }

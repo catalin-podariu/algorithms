@@ -19,13 +19,8 @@ public class ListUtils {
     }
 
     public static Node createListOf(int[] values, int startingPoint) {
-        // base case
         if (values == null || startingPoint >= values.length) return null;
-
-        // Create a new node with the current array value
         Node newNode = new Node(values[startingPoint]);
-
-        // Recursively create the rest of the list
         newNode.next = createListOf(values, startingPoint + 1);
         return newNode;
     }
@@ -39,11 +34,9 @@ public class ListUtils {
         // Disconnect the two halves
         middle.next = null;
 
-        // Step 2: Recursively sort both halves
         Node left = mergeSort(head);
         Node right = mergeSort(nextOfMiddle);
 
-        // Step 3: Merge the sorted halves
         return merge(left, right);
     }
 
