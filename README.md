@@ -49,12 +49,12 @@ skills and coding know-how.
 - ✅ Roman to integer
 - ⏳Fast fourier transform
 - ✅ Remove element
-- ✅ Remove duplicate from sorted array
+- ✅ Remove duplicates from sorted array
 
 <H3>Random Problems</H3>
 
 - Big Fibs _(this doesn't fail)_
-- ✅ Duplicate characters
+- ✅ First non-repeating character
 - ✅ Fibs _(this fails starting with the 93rd number)_
 - ✅ Frequency distribution
 - ✅ Horse race

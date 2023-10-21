@@ -24,7 +24,7 @@ public class AddTwoNumbers {
     private void start() {
         Node list1 = ListUtils.createListOf(new int[]{2, 4, 3}, 0);
         Node list2 = ListUtils.createListOf(new int[]{5, 6, 4}, 0);
-        System.out.println(addTwoNumbers(list1, list2));
+        System.out.println(addTwoNumbers(list1, list2)); // expected [7, 0, 8]
     }
 
     public Node addTwoNumbers(Node l1, Node l2) {

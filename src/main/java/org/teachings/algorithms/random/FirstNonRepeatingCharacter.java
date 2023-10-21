@@ -2,10 +2,10 @@ package org.teachings.algorithms.random;
 
 import java.util.HashMap;
 
-public class DuplicateCharacters {
+public class FirstNonRepeatingCharacter {
 
     public static void main(String[] args) {
-        new DuplicateCharacters().start();
+        new FirstNonRepeatingCharacter().start();
     }
 
     public void start() {

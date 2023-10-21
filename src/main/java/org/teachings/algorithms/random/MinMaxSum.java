@@ -12,7 +12,7 @@ public class MinMaxSum {
 
     private void start() {
         int[] input = {1, 2, 3, 4, 5};
-        System.out.println(getMinMaxSum(input));
+        System.out.println(getMinMaxSum(input)); // expected "10 14"
     }
 
     private String getMinMaxSum(int[] input) {

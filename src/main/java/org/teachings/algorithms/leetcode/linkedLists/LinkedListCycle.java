@@ -32,7 +32,7 @@ public class LinkedListCycle {
 
     private boolean doesListHaveLoop(Node head) {
         Node slowPointer = head;
-        fastPointer = head;
+        fastPointer = head; // keep it 'outside' so you can divide labour
 
         while (fastPointer != null && fastPointer.next != null) {
             slowPointer = slowPointer.next;

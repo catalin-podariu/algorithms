@@ -2,7 +2,7 @@ package org.teachings.algorithms.leetcode.interesting;
 
 import java.util.Arrays;
 
-public class RemoveDuplicateFromSortedArray {
+public class RemoveDuplicatesFromSortedArray {
 
     /*
      * Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that
@@ -32,26 +32,25 @@ public class RemoveDuplicateFromSortedArray {
      * It does not matter what you leave beyond the returned k (hence they are underscores).
      */
     public static void main(String[] args) {
-        new RemoveDuplicateFromSortedArray().start();
+        new RemoveDuplicatesFromSortedArray().start();
     }
 
     private void start() {
         int[] nums = {1,1,2}; // Input array
-        int[] expectedNums = {1, 4, 2}; // The expected answer with correct length
+        int[] expectedNums = {1, 2}; // The expected answer with correct length
         int k = removeDuplicates(nums); // Calls your implementation
         assert k == expectedNums.length;
         for (int i = 0; i < k; i++) {
             assert nums[i] == expectedNums[i];
         }
         System.out.println("Initial nums" + Arrays.toString(nums));
-        System.out.println("Expected nums" + Arrays.toString(expectedNums));
-        System.out.println("k value = " + k);
+        System.out.printf("Expected nums %s - k value = [%s]\n", Arrays.toString(expectedNums), k);
     }
 
     private int removeDuplicates(int[] nums) {
         if (nums.length == 0) return 0;
 
-        int j = 1;
+        int j = 1; // track the position where we should insert the next unique element
         for (int i=1; i < nums.length; i++) {
             if (nums[i] != nums[i - 1] ) {
                 nums[j++] = nums[i];
