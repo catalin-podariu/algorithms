@@ -1,5 +1,0 @@
-TEAM1-XYZ-PROD;"ipv4_is_in_range(tostring(record.SrcIP),""10.111.111.10"")";
-APP2-DEV;"ipv4_is_in_range(tostring(record.SrcIP),""10.222.222.20"")";
-APP2-PROD;"ipv4_is_in_range(tostring(record.SrcIP),""10.333.333.30"")";
-TEAM2-XYZ-DVL;"ipv4_is_in_range(tostring(record.SrcIP),""10.444.444.40"")";
-TEAM2-XYZ-PROD;"ipv4_is_in_range(tostring(record.SrcIP),""10.555.555.50"")";
